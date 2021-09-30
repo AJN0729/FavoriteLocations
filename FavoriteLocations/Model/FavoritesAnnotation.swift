@@ -20,4 +20,13 @@ class FavoritesAnnotation: NSObject, MKAnnotation {
         self.subtitle = subtitle
         self.coordinate = coordinate
     }
+    
+    static func requestMockData()-> [FavoritesAnnotation] {
+        return [
+            FavoritesAnnotation(title: "Mobile App Development",
+                                subtitle: "The best class at Tulsa Tech.",
+                                coordinate: .init(latitude: 36.0341, longitude: -95.9812))
+            // put negative for west and south, positive for north and east.
+        ]
+    }
 }
