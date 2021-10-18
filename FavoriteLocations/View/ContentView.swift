@@ -6,16 +6,19 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        GeometryReader { proxy in
+            MapView()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        FavoritesView()
+        ContentView()
     }
 }

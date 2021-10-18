@@ -24,8 +24,25 @@ class FavoritesAnnotation: NSObject, MKAnnotation {
     static func requestMockData()-> [FavoritesAnnotation] {
         return [
             FavoritesAnnotation(title: "Mobile App Development",
-                                subtitle: "The best class at Tulsa Tech.",
-                                coordinate: .init(latitude: 36.0341, longitude: -95.9812))
+                                subtitle: "The best class at Tulsa Tech",
+                                coordinate: .init(latitude: 36.0445, longitude: -95.5449)),
+            
+            FavoritesAnnotation(title: "Thoreau Demonstration Academy",
+                                subtitle: "My Middle School",
+                                coordinate: .init(latitude: 36.0597, longitude: -95.8925)),
+            
+            FavoritesAnnotation(title: "Eisenhower International School",
+                                subtitle: "My Elemetary School",
+                                coordinate: .init(latitude: 36.0836, longitude: -95.9435)),
+            
+            FavoritesAnnotation(title: "The Admiral Twin Drive In",
+                                subtitle: "Theater",
+                                coordinate: .init(latitude: 36.1636, longitude: -95.8934)),
+            
+            FavoritesAnnotation(title: "Mohawk Park",
+                                subtitle: "A Park in Tulsa",
+                                coordinate: .init(latitude: 36.2211, longitude: -95.8934)),
+                                
             // put negative for west and south, positive for north and east.
         ]
     }
